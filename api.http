@@ -1,0 +1,31 @@
+### Get Users
+GET http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDVmY2UyOTAwNzFhNTY4MGZiZjc2ZiIsImlhdCI6MTc3ODk1NjI3OSwiZXhwIjoxNzc4OTU3MTc5fQ.t3M8HfJlBDZtZrK725NCxbJ0KgrE80ixUTaOxM_Ae7s
+
+### Login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin"
+}
+
+### Logout
+POST http://localhost:3000/api/users/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMDVmY2UyOTAwNzFhNTY4MGZiZjc2ZiIsImlhdCI6MTc3ODk1NjQyNywiZXhwIjoxNzc5NTYxMjI3fQ.Kj977oEBPGA98SzcH06a_EbSZlXbPtuP3f5kOizggrM}"
+}
+
+### Create User
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": "password123"
+}

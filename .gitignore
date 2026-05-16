@@ -1,0 +1,5 @@
+node_modules
+.env
+
+git config --global user.name "itsmejayson"
+git config --global user.email "jeyxen@gmail.com"
